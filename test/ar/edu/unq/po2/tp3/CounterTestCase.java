@@ -38,17 +38,29 @@ class CounterTestCase {
 		int amount = counter.getEvenOcurrences();
 		assertEquals(amount, 1);
 	}
-	
+
+	/**
+	* Verifica la cantidad de impares
+	*/
+	@Test	
 	public void testOddNumbers() {
 		int amount = counter.getOddOcurrences();
 		assertEquals(amount, 9);
 	}
 	
+	/**
+	* Verifica la cantidad de Multiplos
+	*/
+	@Test
 	public void testMultiplos() {
 		int amount = counter.getMultiplos(3);
 		assertEquals(amount, 2);
 	}
 	
+	/**
+	* Verifica el número que tiene más cifras pares
+	*/
+	@Test
 	public void testElDeMasPares() {
 		List<Integer> listaPrueba = new ArrayList<Integer>();
 		listaPrueba.add(156146);
@@ -60,6 +72,10 @@ class CounterTestCase {
 		assertEquals(amount, 488461);
 	}
 	
+	/**
+	* Verifica el múltiplo más alto.
+	*/
+	@Test
 	public void testMultiploMasAlto() {
 		int amount = counter.multiploMasAltoEntre(14, 9);
 		assertEquals(amount, -1);
