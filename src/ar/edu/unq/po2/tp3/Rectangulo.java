@@ -9,7 +9,27 @@ public class Rectangulo {
 		esqInfDer = b;
 	}
 	
+	public int ancho() {
+		return esqInfDer.getX() - esqSupIzq.getX();
+	}
+	
+	public int alto() {
+		return esqSupIzq.getY() - esqInfDer.getY();
+	}
+	
 	public int area() {
-		return 0;
+		return this.ancho() * this.alto();
+	}
+	
+	public int perimetro() {
+		return 2*this.ancho() + 2*this.alto();
+	}
+	
+	public String posicion() {
+		if (this.ancho() > this.alto()) {
+			return ("horizonal");
+		} else {
+			return ("vertical");
+		}
 	}
 }
