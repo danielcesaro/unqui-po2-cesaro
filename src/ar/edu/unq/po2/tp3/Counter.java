@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Counter {
-	List<Integer> numeros = new ArrayList<Integer>();
+	private List<Integer> numeros = new ArrayList<Integer>();
 
 	public int getEvenOcurrences() {
 		int cantPares = 0;
